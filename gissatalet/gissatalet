@@ -1,15 +1,18 @@
-1#1. Denna uppgift ska man öva variabler, vilkor och loopar
 import random
 print("\n----------------------------------------------------------")
 print(".:GissaTalet:.\n\n")
-
 print("gissa ett tal mellan 1 och 10 och pröva lyckan, du får 3st försök!\n")
+
 slumptal = random.randrange(1, 10)
+
 #print(slumptal)
 i = 0
+
 hittat = False
-#loop
+
 while i < 3:
+    kvar = 2 - i
+
     gissatal = input("mata in tal: " )
 
     if slumptal == int(gissatal) :
@@ -19,12 +22,21 @@ while i < 3:
 
     elif slumptal > int(gissatal):
         hittat = False
-        print("För lågt!")
+        print(f"För lågt, {kvar} försök kvar!")
 
     else:
         slumptal < int(gissatal)
         hittat = False
-        print("För högt")
+        print(f"För högt, {kvar} försök kvar!")
+
+
+    i += 1
+
+
+if hittat:
+    print("\n Bra jobbat, här får du fem spänn")
+else:
+    print("\n---------------------------------------------------------")
 
 
 
