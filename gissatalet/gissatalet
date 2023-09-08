@@ -15,9 +15,19 @@ while i < 3:
     if slumptal == int(gissatal) :
         hittat = True
         print("\n rätt svar! \n")
-        break
-
+        
+    else:
+        slumptal<int(gissatal)
+        hittat = False
+        print("För lågt! \n")
+        
+   
+    
+    
+    
+ 
     i += 1
+
 
 if hittat:
     print("\n Bra jobbat, här får du fem spänn")
