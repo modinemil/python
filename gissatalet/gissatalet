@@ -21,28 +21,21 @@ while i < 3:
         exit()
 
     elif slumptal > int(gissatal):
+        if kvar == 0:
+            print(f"\nFör lågt, du har inga försök kvar! Talet var {slumptal}")
+            exit()
         hittat = False
         print(f"För lågt, {kvar} försök kvar!")
 
     else:
+        if kvar == 0:
+            print(f"\nFör högt, du har inga försök kvar! Talet var {slumptal}")
+            exit()
         slumptal < int(gissatal)
         hittat = False
         print(f"För högt, {kvar} försök kvar!")
 
 
-    i += 1
-
-
-if hittat:
-    print("\n Bra jobbat, här får du fem spänn")
-else:
-    print("\n---------------------------------------------------------")
-
-
-
-
-
- 
     i += 1
 
 
