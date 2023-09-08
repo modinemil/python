@@ -10,21 +10,26 @@ i = 0
 hittat = False
 #loop
 while i < 3:
-    gissatal =input("mata in tal: " )
+    gissatal = input("mata in tal: " )
 
     if slumptal == int(gissatal) :
         hittat = True
         print("\n rätt svar! \n")
-        
-    else:
-        slumptal<int(gissatal)
+        exit()
+
+    elif slumptal > int(gissatal):
         hittat = False
-        print("För lågt! \n")
-        
-   
-    
-    
-    
+        print("För lågt!")
+
+    else:
+        slumptal < int(gissatal)
+        hittat = False
+        print("För högt")
+
+
+
+
+
  
     i += 1
 
